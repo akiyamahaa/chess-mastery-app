@@ -31,7 +31,7 @@ export default function MyApp({
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <QueryClientProvider client={queryClient}>
-            <HeaderMeta title="Brainy Chess" description="Brainy Chess" />
+            <HeaderMeta title="Chess Mastery" description="Chess Mastery" />
             <ConfigProvider
               theme={{
                 token: {
@@ -54,7 +54,7 @@ export default function MyApp({
   return (
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
-        <HeaderMeta title="Brainy Chess" description="Brainy Chess" />
+        <HeaderMeta title="Chess Mastery" description="Chess Mastery" />
         <Routes Component={Component} pageProps={pageProps} router={router} />
       </QueryClientProvider>
     </Provider>
