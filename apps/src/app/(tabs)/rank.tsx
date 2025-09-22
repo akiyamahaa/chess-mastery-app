@@ -111,17 +111,17 @@ export default function ProfileScreen() {
           </View>
           <View className="flex-row justify-between items-center">
             <Image source={images.vua} className="h-36 w-36" />
-            <Text className="text-2xl text-[#734DBE] font-semibold mt-20">{currentRank.name}</Text>
+            <Text className="text-2xl text-primary font-semibold mt-20">{currentRank.name}</Text>
             <Image source={images.hau} className="h-36 w-36" />
           </View>
           <View className="flex-row justify-between mt-2">
             <View className="flex-row items-center bg-[#734DBE14] rounded-xl px-2">
               <Image source={currentRank.rank} className="h-8 w-8" />
-              <Text className="text-xs text-[#734DBE]">{currentRank.name}</Text>
+              <Text className="text-xs text-primary">{currentRank.name}</Text>
             </View>
             <View className="flex-row items-center bg-[#734DBE14] rounded-xl px-2">
               <Image source={currentRank.nextRank} className="h-8 w-8" />
-              <Text className="text-xs text-[#734DBE]">{currentRank.nameNext}</Text>
+              <Text className="text-xs text-primary">{currentRank.nameNext}</Text>
             </View>
           </View>
           <View className="h-[6px] bg-[#64748B29] rounded-full mt-4">
@@ -132,7 +132,7 @@ export default function ProfileScreen() {
                     ? '100%'
                     : `${Math.min((currentRank.score / currentRank.nextScore) * 100, 100)}%`,
               }}
-              className="h-[6px] bg-[#734DBE] rounded-full"
+              className="h-[6px] bg-primary rounded-full"
             />
           </View>
           <View className="flex-row mt-2 justify-between">
@@ -173,7 +173,7 @@ export default function ProfileScreen() {
                 key={it.title}
                 className={
                   actionTab === it.key
-                    ? 'p-3.5 rounded-xl bg-[#734DBE]'
+                    ? 'p-3.5 rounded-xl bg-primary'
                     : 'p-3.5 rounded-xl bg-[#64748B14]'
                 }
                 onPress={() => setActiveTab(it.key)}
@@ -214,7 +214,7 @@ export default function ProfileScreen() {
                       <View className="flex-row items-center gap-4">
                         <View
                           style={{ backgroundColor: renderColor(index) }}
-                          className="w-6 h-6 rounded bg-[#734DBE] items-center justify-center"
+                          className="w-6 h-6 rounded bg-primary items-center justify-center"
                         >
                           <Text className="text-xs font-semibold text-white">#{index + 1}</Text>
                         </View>

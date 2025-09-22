@@ -65,14 +65,14 @@ export default function LearnScreen() {
           <View className="flex-row justify-between border border-[#FFFFFF52] bg-[#FFFFFF1F w-full p-3 rounded-2xl">
             <View className="flex-row items-center">
               <IconStarRank />
-              <Text className="text-3xl font-bold text-[#734DBE] ml-1">
+              <Text className="text-3xl font-bold text-primary ml-1">
                 {loseWinQuery?.data?.score > 0 ? loseWinQuery?.data?.score : 0}
                 <Text className="text-sm font-normal text-[#AE86E0]"> điểm</Text>
               </Text>
             </View>
             <View className="flex-row items-center bg-[#734DBE14] rounded-xl p-2">
               <Image source={currentRank.rank} className="h-8 w-8" />
-              <Text className="text-xs text-[#734DBE]">{currentRank.name}</Text>
+              <Text className="text-xs text-primary">{currentRank.name}</Text>
             </View>
           </View>
           <View className="mt-2">
@@ -91,7 +91,7 @@ export default function LearnScreen() {
               params: { type: 'black' },
             })
           }}
-          className="bg-[#734DBE] w-full h-12 rounded-2xl items-center justify-center"
+          className="bg-primary w-full h-12 rounded-2xl items-center justify-center"
         >
           <Text className="font-semibold text-xl text-white">Chơi với máy</Text>
         </TouchableOpacity>

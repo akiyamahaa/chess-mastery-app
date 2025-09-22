@@ -9,7 +9,7 @@ export default function HeaderSetting() {
   const { userQuery } = useSettings()
 
   return (
-    <View className="flex-row justify-between w-full items-center bg-[#e8d8f5] pt-14 pb-4 px-4">
+    <View className="flex-row justify-between w-full items-center pt-14 pb-4 px-4">
       <Image
         source={{
           uri:
@@ -19,7 +19,7 @@ export default function HeaderSetting() {
         className="w-[48px] h-[48px] rounded-full"
         resizeMode="cover"
       />
-      <Text className="font-semibold text-lg">Xếp hạng</Text>
+      <Text className="font-bold text-lg">Xếp hạng</Text>
       <TouchableOpacity
         onPress={() => router.push(ERouteTable.SETTING_SCREEN)}
         className="w-[48px] h-[48px] bg-[#64748B14] items-center justify-center rounded-full"

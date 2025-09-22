@@ -143,7 +143,7 @@ const SignIn = () => {
 
         <Pressable onPress={() => router.push(ERouteTable.SIGIN_UP)}>
           <Text className="text-center text-sm text-[#6B7280] mt-6">
-            Bạn chưa có tài khoản? <Text className="font-semibold text-[#734DBE]">Đăng ký</Text>
+            Bạn chưa có tài khoản? <Text className="font-semibold text-primary">Đăng ký</Text>
           </Text>
         </Pressable>
       </View>

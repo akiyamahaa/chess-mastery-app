@@ -100,7 +100,7 @@ export default function PracticeScreen() {
                 params: { level: renderState() },
               })
             }}
-            className="bg-[#734DBE] h-[74px] w-[200px] items-center justify-center rounded-3xl"
+            className="bg-primary h-[74px] w-[200px] items-center justify-center rounded-3xl"
           >
             <Text className="text-white opacity-[48%]">Độ khó</Text>
             <Text className="text-white text-2xl font-semibold">{activeState}</Text>

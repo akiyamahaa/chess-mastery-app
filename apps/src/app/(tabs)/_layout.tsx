@@ -14,7 +14,7 @@ const TabsLayout = () => {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: '#734DBE',
+        tabBarActiveTintColor: '#a14c04',
         tabBarInactiveTintColor: '#64748B',
         tabBarStyle: {
           borderWidth: 1,
@@ -38,7 +38,7 @@ const TabsLayout = () => {
         options={{
           title: 'Khám phá',
           tabBarIcon: ({ color }) => (
-            <View>{color === '#734DBE' ? <IconHomeActive /> : <IconHome />}</View>
+            <View>{color === '#a14c04' ? <IconHomeActive /> : <IconHome />}</View>
           ),
         }}
       />
@@ -47,7 +47,7 @@ const TabsLayout = () => {
         options={{
           title: 'Thực hành',
           tabBarIcon: ({ color }) => (
-            <View>{color === '#734DBE' ? <IconPractiveActive /> : <IconPractive />}</View>
+            <View>{color === '#a14c04' ? <IconPractiveActive /> : <IconPractive />}</View>
           ),
         }}
       />
@@ -56,7 +56,7 @@ const TabsLayout = () => {
         options={{
           title: 'Chơi cờ',
           tabBarIcon: ({ color }) => (
-            <View>{color === '#734DBE' ? <IconPlayChessActive /> : <IconPlayChess />}</View>
+            <View>{color === '#a14c04' ? <IconPlayChessActive /> : <IconPlayChess />}</View>
           ),
         }}
       />
@@ -65,7 +65,7 @@ const TabsLayout = () => {
         options={{
           title: 'Xếp hạng',
           tabBarIcon: ({ color }) => (
-            <View>{color === '#734DBE' ? <IconRankActive /> : <IconRank />}</View>
+            <View>{color === '#a14c04' ? <IconRankActive /> : <IconRank />}</View>
           ),
         }}
       />

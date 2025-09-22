@@ -2,6 +2,8 @@ import cards from '@/assets/images/cards.png'
 import splash from '@/assets/images/splash.png'
 import onboarding1 from '@/assets/images/onboarding1.png'
 import onboarding2 from '@/assets/images/onboarding2.png'
+import onboarding3 from '@/assets/images/onboarding3.png'
+
 import bgAuth from '@/assets/images/bg-auth.png'
 import BannerHome from '@/assets/images/banner-home.png'
 import bgPractice from '@/assets/images/bg-practice.png'
@@ -37,6 +39,7 @@ export default {
   splash,
   onboarding1,
   onboarding2,
+  onboarding3,
   bgAuth,
   BannerHome,
   bgPractice,

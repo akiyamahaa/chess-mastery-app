@@ -22,24 +22,36 @@ export default function Onboarding() {
         </View>
       }
     >
-      <ImageBackground source={images.onboarding1} resizeMode="cover" className="h-full">
+      <ImageBackground
+        source={images.onboarding1}
+        resizeMode="cover"
+        className="h-full object-center"
+      >
         <Text className="text-center text-white text-3xl font-bold absolute bottom-40 left-0 right-0 m-auto">
           Học cờ vua dễ như {'\n'}
           chơi game!
         </Text>
       </ImageBackground>
-      <ImageBackground source={images.onboarding1} resizeMode="cover" className="h-full">
+      <ImageBackground
+        source={images.onboarding2}
+        resizeMode="cover"
+        className="h-full object-center"
+      >
         <Text className="text-center text-white text-3xl font-bold absolute bottom-40 left-0 right-0 m-auto">
           Rèn luyện tư duy, phản {'\n'} xạ nhanh mỗi ngày.
         </Text>
       </ImageBackground>
-      <ImageBackground source={images.onboarding2} resizeMode="cover" className="h-full">
+      <ImageBackground
+        source={images.onboarding3}
+        resizeMode="cover"
+        className="h-full object-center"
+      >
         <Text className="text-center text-white text-3xl font-bold absolute bottom-40 left-0 right-0 m-auto">
           Chinh phục huy hiệu và {'\n'} thách đấu với bạn bè!
         </Text>
         <View className="w-full absolute bottom-20 items-center">
           <TouchableOpacity
-            className="bg-[#734DBE] w-11/12 rounded-xl h-14 justify-center"
+            className="bg-primary w-11/12 rounded-xl h-14 justify-center"
             onPress={() => router.replace(ERouteTable.SIGIN_IN)}
           >
             <Text className="text-center text-white text-lg font-bold ">Bắt đầu</Text>

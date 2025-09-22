@@ -162,7 +162,7 @@ const RenderMenu = React.memo(() => {
           ) : (
             <ListItem
               disablePadding
-              className={isItemActive ? "bg-[#734DBE14] rounded" : ""}
+              className={isItemActive ? "bg-[#a14c0414] rounded" : ""}
             >
               <ListItemButton
                 onClick={() => {
@@ -195,7 +195,7 @@ const RenderMenu = React.memo(() => {
                   </ListItemIcon>
                 )}
                 <ListItemText
-                  className={isItemActive ? "text-[#734DBE]" : "text-[#637381]"}
+                  className={isItemActive ? "text-[#a14c04]" : "text-[#637381]"}
                   primary={item.title}
                 />
                 {item.children &&
@@ -235,7 +235,7 @@ const RenderMenu = React.memo(() => {
                             width: "6px",
                             height: "6px",
                             borderRadius: "50%",
-                            backgroundColor: "#7E3AF2",
+                            backgroundColor: "#a14c04",
                           }}
                         />
                       )}
@@ -282,7 +282,7 @@ export default function Sidebar(): JSX.Element {
         }}
       >
         <Box sx={{display: "flex", alignItems: "center", gap: 1}}>
-          <Image src="/img/logo-2.png" alt="logo" width={40} height={40} />
+          <Image src="/img/logo2.png" alt="logo" width={80} height={80} />
         </Box>
         <IconButton onClick={handleDrawerToggle}>
           <IconDropDown />
